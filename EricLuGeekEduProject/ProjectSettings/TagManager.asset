@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Goal
   - Pipes
+  - Bullet
+  - Asteroid
   layers:
   - Default
   - TransparentFX
