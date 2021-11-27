@@ -13,8 +13,12 @@ public class TrafficRoad : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SpawnCarTime = Random.Range(4.5f, 5.5f);
+        SpawnCarTime = Random.Range(5.5f, 10.5f);
         randomCar = Random.Range(0, Cars.Length);
+        if(randomCar == 2) // if the random car is the truck
+        {
+            SpawnCarTime = Random.Range(10.5f, 12.5f); ;
+        }
     }
 
     // Update is called once per frame

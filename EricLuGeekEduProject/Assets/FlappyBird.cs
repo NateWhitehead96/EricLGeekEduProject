@@ -65,6 +65,6 @@ public class FlappyBird : MonoBehaviour
 
     void MoveToLoseScene()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("MainMenu");
     }
 }

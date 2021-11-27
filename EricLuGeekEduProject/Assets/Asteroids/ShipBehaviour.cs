@@ -90,7 +90,7 @@ public class ShipBehaviour : MonoBehaviour
             Health--;
             if(Health <= 0)
             {
-                SceneManager.LoadScene("Asteroids");
+                SceneManager.LoadScene("MainMenu");
             }
         }
     }

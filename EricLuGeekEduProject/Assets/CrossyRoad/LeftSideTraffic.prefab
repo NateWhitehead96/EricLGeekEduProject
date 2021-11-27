@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 5359818941614709065}
   - component: {fileID: 2590026863229179948}
   - component: {fileID: 1847742233437522387}
+  - component: {fileID: 6546076732716570381}
   m_Layer: 0
   m_Name: LeftSideTraffic
   m_TagString: Untagged
@@ -186,8 +187,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Direction: 1
   Cars:
-  - {fileID: 5351248197331219775, guid: fe9b0cef441d0ae46b7ea6f10566d7e1, type: 3}
-  - {fileID: 7602513879908970123, guid: 8304ec8ba1488b643aa345e5cb7cad9b, type: 3}
+  - {fileID: 221130943824634244, guid: 892feef125898284aa91d7400eec83a5, type: 3}
+  - {fileID: 7170212054501786850, guid: 4b24eb1830c87974eb8b17e918adbf0b, type: 3}
+  - {fileID: 5694326628469533718, guid: ea3f0137a80112743aa71876a68dc8f0, type: 3}
   Timer: 0
   SpawnCarTime: 0
   CarSpawnPosition: {fileID: 1298000999879616668}
+--- !u!114 &6546076732716570381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7803059847095587424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a348daa5ea51fed43b989186b65260f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerPosition: {fileID: 0}

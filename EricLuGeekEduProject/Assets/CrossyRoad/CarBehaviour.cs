@@ -16,6 +16,11 @@ public class CarBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Direction < 0)
+        {
+            transform.rotation = Quaternion.Euler(transform.rotation.x, 180, transform.rotation.z);
+        }
+
         transform.position = new Vector3(transform.position.x + Direction * (MoveSpeed * Time.deltaTime), transform.position.y, transform.position.z); // this will be its movement
         if(transform.position.x > Bounds && Direction == 1)
         {

@@ -9,6 +9,9 @@ TagManager:
   - Bullet
   - Asteroid
   - RoadCross
+  - Water
+  - Log
+  - Car
   layers:
   - Default
   - TransparentFX
