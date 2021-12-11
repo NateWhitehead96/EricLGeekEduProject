@@ -7,7 +7,7 @@ using UnityEngine;
 public class GroupBehaviour : MonoBehaviour
 {
     float lastFall;
-
+    public float DropTime = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +16,8 @@ public class GroupBehaviour : MonoBehaviour
             print("GAME OVER"); // we'll add this to switch back to the start menu
             Destroy(gameObject);
         }
+        FindObjectOfType<BlockSpawner>().FindNextBlock();
+        //FindObjectOfType<DisplayNextBlock>().UpdateNext();
     }
 
     // Update is called once per frame
@@ -46,7 +48,7 @@ public class GroupBehaviour : MonoBehaviour
                 transform.position += new Vector3(-1, 0, 0);
             }
         }
-        else if(Input.GetKeyDown(KeyCode.DownArrow) || Time.time - lastFall >= 1)
+        else if(Input.GetKeyDown(KeyCode.DownArrow) || Time.time - lastFall >= DropTime)
         {
             transform.position += new Vector3(0, -1, 0);
             if (isValidGridPos())
@@ -59,6 +61,7 @@ public class GroupBehaviour : MonoBehaviour
                 PlayField.deleteFullRows();
 
                 FindObjectOfType<BlockSpawner>().spawnNext();
+                
                 enabled = false; // when we do this it stops the script from working on this object
             }
             lastFall = Time.time;
@@ -73,6 +76,16 @@ public class GroupBehaviour : MonoBehaviour
             else
             {
                 transform.Rotate(0, 0, 90);
+            }
+        }
+
+        if(TetrisHUD.GameScore >= TetrisHUD.OldScore + 100)
+        {
+            TetrisHUD.OldScore += 100;
+            DropTime -= 0.2f;
+            if(DropTime < 0.2f)
+            {
+                DropTime = 0.2f; // this makes sure we never drop blocks faster than 0.2 seconds
             }
         }
     }

@@ -53,6 +53,7 @@ public class PlayField : MonoBehaviour
                 grid[x, y - 1].position += new Vector3(0, -1, 0); // moving the blocks down
             }
         }
+        TetrisHUD.GameScore++; // updating score
     }
 
     public static void decreaseRowsAbove(int y)
