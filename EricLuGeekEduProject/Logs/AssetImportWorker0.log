@@ -883,3 +883,340 @@ System memory in use after: 89.9 MB.
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2352.
 Total: 2.427400 ms (FindLiveObjects: 0.324800 ms CreateObjectMapping: 0.048000 ms MarkObjects: 1.916100 ms  DeleteObjects: 0.137400 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 1020.484894 seconds.
+  path: Assets/Tetris/HeldBlock.cs
+  artifactKey: Guid(d40f0718f1c3d7e4a8ca5193b9ef4b5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tetris/HeldBlock.cs using Guid(d40f0718f1c3d7e4a8ca5193b9ef4b5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02845226e8553e6012d35ff1ccc997ab') in 0.010146 seconds
+  Import took 0.013968 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000985 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.833 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.92 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1816 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.0 MB.
+System memory in use after: 90.0 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2356.
+Total: 3.408900 ms (FindLiveObjects: 0.824300 ms CreateObjectMapping: 0.071200 ms MarkObjects: 2.380200 ms  DeleteObjects: 0.131800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001174 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.793 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1816 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.0 MB.
+System memory in use after: 90.0 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2359.
+Total: 3.475200 ms (FindLiveObjects: 0.622400 ms CreateObjectMapping: 0.078000 ms MarkObjects: 2.623800 ms  DeleteObjects: 0.148500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 164.501965 seconds.
+  path: Assets/Tetris/HeldBlock.cs
+  artifactKey: Guid(d40f0718f1c3d7e4a8ca5193b9ef4b5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tetris/HeldBlock.cs using Guid(d40f0718f1c3d7e4a8ca5193b9ef4b5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '613930664d0e88edb41217f27129d19f') in 0.006615 seconds
+  Import took 0.009985 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001150 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.754 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1816 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.0 MB.
+System memory in use after: 90.0 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2362.
+Total: 1.795200 ms (FindLiveObjects: 0.193200 ms CreateObjectMapping: 0.042500 ms MarkObjects: 1.464200 ms  DeleteObjects: 0.094400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 379.796125 seconds.
+  path: Assets/Tetris/HeldBlock.cs
+  artifactKey: Guid(d40f0718f1c3d7e4a8ca5193b9ef4b5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tetris/HeldBlock.cs using Guid(d40f0718f1c3d7e4a8ca5193b9ef4b5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84c7f28c09d52906c171340d3f790183') in 0.004734 seconds
+  Import took 0.007328 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001207 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.730 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.95 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1816 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.0 MB.
+System memory in use after: 90.0 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2365.
+Total: 2.280100 ms (FindLiveObjects: 0.212400 ms CreateObjectMapping: 0.053200 ms MarkObjects: 1.916100 ms  DeleteObjects: 0.096900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000877 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.779 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1816 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.0 MB.
+System memory in use after: 90.0 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2368.
+Total: 2.946900 ms (FindLiveObjects: 0.390700 ms CreateObjectMapping: 0.060100 ms MarkObjects: 2.336800 ms  DeleteObjects: 0.157100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000857 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.835 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.56 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1816 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.1 MB.
+System memory in use after: 90.0 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2371.
+Total: 1.928800 ms (FindLiveObjects: 0.308200 ms CreateObjectMapping: 0.050000 ms MarkObjects: 1.474800 ms  DeleteObjects: 0.094400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000748 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.734 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.15 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1816 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.1 MB.
+System memory in use after: 90.1 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2374.
+Total: 1.823600 ms (FindLiveObjects: 0.216600 ms CreateObjectMapping: 0.046000 ms MarkObjects: 1.441700 ms  DeleteObjects: 0.118300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 341.304887 seconds.
+  path: Assets/Scenes/Tetris.unity
+  artifactKey: Guid(f95798796a3adb7419240085ed407816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Tetris.unity using Guid(f95798796a3adb7419240085ed407816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b1b5af25150411594f7a97af1d3261d') in 0.023785 seconds
+  Import took 0.040929 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001084 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.918 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1816 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.1 MB.
+System memory in use after: 90.1 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2377.
+Total: 2.337900 ms (FindLiveObjects: 0.240600 ms CreateObjectMapping: 0.043400 ms MarkObjects: 1.951400 ms  DeleteObjects: 0.101300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001093 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.914 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.15 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1816 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.1 MB.
+System memory in use after: 90.1 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2380.
+Total: 2.312000 ms (FindLiveObjects: 0.334400 ms CreateObjectMapping: 0.049800 ms MarkObjects: 1.821100 ms  DeleteObjects: 0.105600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 130.074918 seconds.
+  path: Assets/Tetris.png
+  artifactKey: Guid(bed32b713e1bb9246ab90a79d7771153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tetris.png using Guid(bed32b713e1bb9246ab90a79d7771153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ca92e6e384fae945a18ddea51db6ac8') in 0.062887 seconds
+  Import took 0.079978 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000845 seconds.
+  path: Assets/Tetris.png
+  artifactKey: Guid(bed32b713e1bb9246ab90a79d7771153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tetris.png using Guid(bed32b713e1bb9246ab90a79d7771153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ca92e6e384fae945a18ddea51db6ac8') in 0.012171 seconds
+  Import took 0.015541 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 58.452046 seconds.
+  path: Assets/Tetris.png
+  artifactKey: Guid(bed32b713e1bb9246ab90a79d7771153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tetris.png using Guid(bed32b713e1bb9246ab90a79d7771153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5def83e9f7e1888ebd2b3d8254ec549c') in 0.021926 seconds
+  Import took 0.026631 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.062123 seconds.
+  path: Assets/Tetris.png
+  artifactKey: Guid(bed32b713e1bb9246ab90a79d7771153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tetris.png using Guid(bed32b713e1bb9246ab90a79d7771153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e2cc13216d328b1686b3d1fb2f3f0c9') in 0.020127 seconds
+  Import took 0.023140 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.741321 seconds.
+  path: Assets/Tetris.png
+  artifactKey: Guid(bed32b713e1bb9246ab90a79d7771153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tetris.png using Guid(bed32b713e1bb9246ab90a79d7771153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2412e531d59d1a06d9e74316ce19973') in 0.010917 seconds
+  Import took 0.019664 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001036 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.773 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1816 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.1 MB.
+System memory in use after: 90.1 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2387.
+Total: 3.788700 ms (FindLiveObjects: 0.374600 ms CreateObjectMapping: 0.163100 ms MarkObjects: 3.053800 ms  DeleteObjects: 0.195800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001341 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.825 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.69 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1816 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.1 MB.
+System memory in use after: 90.1 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2390.
+Total: 2.334100 ms (FindLiveObjects: 0.338900 ms CreateObjectMapping: 0.053100 ms MarkObjects: 1.830700 ms  DeleteObjects: 0.109700 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

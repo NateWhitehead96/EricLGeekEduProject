@@ -17,6 +17,11 @@ public class MainMenuScript : MonoBehaviour
     {
         SceneManager.LoadScene("CrossyRoad");
     }
+
+    public void PlayTetris()
+    {
+        SceneManager.LoadScene("Tetris");
+    }
     public void ExitGame()
     {
         Application.Quit();

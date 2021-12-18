@@ -6,6 +6,7 @@ public class BlockSpawner : MonoBehaviour
 {
     public GameObject[] groups;
     public int next;
+    public int previous;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,7 @@ public class BlockSpawner : MonoBehaviour
     public int FindNextBlock()
     {
         //FindObjectOfType<DisplayNextBlock>().UpdateNext();
+        previous = next;
         next = Random.Range(0, groups.Length);
         return next;
         //NextBlock = Instantiate(groups[i], transform.position, Quaternion.identity);

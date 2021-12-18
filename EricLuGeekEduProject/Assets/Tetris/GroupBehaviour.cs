@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // some notes, the group's transform is the parent empty game object and the child transforms are the individual squares
 
@@ -14,6 +15,7 @@ public class GroupBehaviour : MonoBehaviour
         if (!isValidGridPos())
         {
             print("GAME OVER"); // we'll add this to switch back to the start menu
+            SceneManager.LoadScene("MainMenu");
             Destroy(gameObject);
         }
         FindObjectOfType<BlockSpawner>().FindNextBlock();
@@ -77,6 +79,11 @@ public class GroupBehaviour : MonoBehaviour
             {
                 transform.Rotate(0, 0, 90);
             }
+        }
+        else if (Input.GetKeyDown(KeyCode.Space)) // when we switch, we store that value in a held block and delete the current block + spawn a new one
+        {
+            FindObjectOfType<HeldBlock>().SwitchBlock(FindObjectOfType<BlockSpawner>().previous);
+            Destroy(gameObject);
         }
 
         if(TetrisHUD.GameScore >= TetrisHUD.OldScore + 100)
