@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -13,10 +14,15 @@ public class PlayerScript : MonoBehaviour
     public Transform childTransform; // the player sprite
 
     public Vector3 LandingDistance;
+
+    public Canvas PauseUI;
+    public Animator animator;
+    public bool flip;
+    public bool EndlessMode;
     // Start is called before the first frame update
     void Start()
     {
-        
+        PauseUI.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -29,6 +35,20 @@ public class PlayerScript : MonoBehaviour
     void AutoRun() // keep moving out player forward
     {
         transform.Translate(Vector3.right * moveSpeed * Time.deltaTime); // this will move us to the right at our speed
+
+        if (Input.GetKeyDown(KeyCode.P)) // pausing in unity. Time.timeScale controls the speed of time
+        {
+            if (PauseUI.gameObject.activeInHierarchy)
+            {
+                PauseUI.gameObject.SetActive(false);
+                Time.timeScale = 1;
+            }
+            else
+            {
+                PauseUI.gameObject.SetActive(true);
+                Time.timeScale = 0;
+            }
+        }
     }
 
     void Jump()
@@ -37,9 +57,10 @@ public class PlayerScript : MonoBehaviour
         {
             rb.AddForce(Vector2.up * jumpForce);
             jumping = true;
-            childTransform.Rotate(Vector3.forward * -180);
+            //childTransform.Rotate(Vector3.forward * -180);
             LandingDistance = transform.position;
-            print("Takeoff at " + LandingDistance);
+            flip = !flip;
+            animator.SetBool("Flipped", flip);
         }
     }
 
@@ -49,10 +70,13 @@ public class PlayerScript : MonoBehaviour
         {
             jumping = false;
             LandingDistance = transform.position;
-            print("Landing at " + LandingDistance);
         }
         if (collision.gameObject.CompareTag("Hazard")) // when we hit a hazard, go back to the start and reset our score
         {
+            if (EndlessMode)
+            {
+                SceneManager.LoadScene("EndlessRunner");
+            }
             transform.position = Vector3.zero;
             FindObjectOfType<ScoreTracker>().score = 0;
             FindObjectOfType<ScoreTracker>().oldScore = 0;

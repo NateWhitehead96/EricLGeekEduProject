@@ -22,23 +22,23 @@ public class ScoreTracker : MonoBehaviour
             int randColor = Random.Range(0, 5);
             if(randColor == 0)
             {
-                camera.backgroundColor = Color.Lerp(camera.backgroundColor, Color.blue, 5f);
+                camera.backgroundColor = Color.Lerp(camera.backgroundColor, Color.blue, Time.time);
             }
             if (randColor == 1)
             {
-                camera.backgroundColor = Color.Lerp(camera.backgroundColor, Color.red, 5f);
+                camera.backgroundColor = Color.Lerp(camera.backgroundColor, Color.red, Time.time);
             }
             if (randColor == 2)
             {
-                camera.backgroundColor = Color.Lerp(camera.backgroundColor, Color.green, 5f);
+                camera.backgroundColor = Color.Lerp(camera.backgroundColor, Color.green, Time.time);
             }
             if (randColor == 3)
             {
-                camera.backgroundColor = Color.Lerp(camera.backgroundColor, Color.yellow, 5f);
+                camera.backgroundColor = Color.Lerp(camera.backgroundColor, Color.yellow, Time.time);
             }
             if (randColor == 4)
             {
-                camera.backgroundColor = Color.Lerp(camera.backgroundColor, Color.magenta, 5f);
+                camera.backgroundColor = Color.Lerp(camera.backgroundColor, Color.magenta, Time.time);
             }
             
         }
