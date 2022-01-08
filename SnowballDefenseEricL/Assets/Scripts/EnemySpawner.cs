@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     public float bounds;
-    public GameObject Enemy;
+    public GameObject[] SpawnedObject;
     public ParticleSystem Snowfall;
 
     public float timer;
@@ -25,15 +25,7 @@ public class EnemySpawner : MonoBehaviour
     {
         if(timer >= SpawnTime && NumberOfEnemies > 0)
         {
-            float randomY = Random.Range(-bounds, bounds); // find a random y value
-            GameObject newEnemy = Instantiate(Enemy, new Vector3(transform.position.x, randomY), Quaternion.identity); // spawn new enemy
-            newEnemy.GetComponent<Enemy>().moveSpeed = Random.Range(1, maxSpeed); // apply random move speed
-            NumberOfEnemies--;
-            timer = 0;
-            if(NumberOfEnemies <= 0)
-            {
-                StartCoroutine(NextWave());
-            }
+            SpawnNextThing();
         }
         timer += Time.deltaTime; // add to our timer
     }
@@ -47,6 +39,27 @@ public class EnemySpawner : MonoBehaviour
         if(SpawnTime > 1)
         {
             SpawnTime -= 0.1f;
+        }
+    }
+
+    public void SpawnNextThing()
+    {
+        int x = Random.Range(0, 11); // random number from 0 - 10
+        float randomY = Random.Range(-bounds, bounds); // find a random y value
+        if (x == 0)
+        {
+            Instantiate(SpawnedObject[1], new Vector3(transform.position.x, randomY), Quaternion.identity);
+        }
+        else
+        {
+            GameObject newEnemy = Instantiate(SpawnedObject[0], new Vector3(transform.position.x, randomY), Quaternion.identity); // spawn new enemy
+            newEnemy.GetComponent<Enemy>().moveSpeed = Random.Range(1, maxSpeed); // apply random move speed
+            NumberOfEnemies--;
+            timer = 0;
+            if (NumberOfEnemies <= 0)
+            {
+                StartCoroutine(NextWave());
+            }
         }
     }
 }

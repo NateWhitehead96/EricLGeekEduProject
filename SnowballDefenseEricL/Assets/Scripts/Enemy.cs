@@ -6,6 +6,9 @@ public class Enemy : MonoBehaviour
 {
     public int moveSpeed; // how fast it goes
     private Animator animator;
+
+    public GameObject HitEffect; // a reference to the hit effect particle system
+    public GameObject Effect;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +23,7 @@ public class Enemy : MonoBehaviour
         if(transform.position.x < -12)
         {
             ScoringSystem.Lives--;
+            CameraShake.shakeDuration = 1;
             Destroy(gameObject);
         }
     }
@@ -30,6 +34,7 @@ public class Enemy : MonoBehaviour
         {
             Destroy(collision.gameObject); // first destroy the snowball
             ScoringSystem.Score += 5;
+            Effect = Instantiate(HitEffect, transform.position, Quaternion.identity);
             StartCoroutine(DyingAnimation());
         }
     }
@@ -39,7 +44,8 @@ public class Enemy : MonoBehaviour
         gameObject.GetComponent<BoxCollider2D>().enabled = false; // disable collider so other enemies can pass
         animator.SetBool("Dying", true); // plays the dying animation
         moveSpeed = 0;
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(3);
+        Destroy(Effect); // destroy the particle effect
         Destroy(gameObject); // destroy self
     }
 }

@@ -5,10 +5,11 @@ using UnityEngine;
 public class Snowball : MonoBehaviour
 {
     public Vector3 MoveToPosition; // this will be a position that the snowball will move to
+    public float size;
     // Start is called before the first frame update
     void Start()
     {
-        
+        transform.localScale = new Vector3(size, size, 1);
     }
 
     // Update is called once per frame
