@@ -22,6 +22,10 @@ public class ShootSnowball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // have player look at mouse
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        transform.LookAt(mousePosition);
+
         if (Input.GetMouseButtonDown(0) && PauseCanvas.activeInHierarchy == false && shooting == false) // left click input
         {
             StartCoroutine(FireSnowball());

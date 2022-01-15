@@ -48,12 +48,20 @@ public class EnemySpawner : MonoBehaviour
         float randomY = Random.Range(-bounds, bounds); // find a random y value
         if (x == 0)
         {
-            Instantiate(SpawnedObject[1], new Vector3(transform.position.x, randomY), Quaternion.identity);
+            Instantiate(SpawnedObject[2], new Vector3(transform.position.x, randomY), Quaternion.identity);
         }
         else
         {
-            GameObject newEnemy = Instantiate(SpawnedObject[0], new Vector3(transform.position.x, randomY), Quaternion.identity); // spawn new enemy
-            newEnemy.GetComponent<Enemy>().moveSpeed = Random.Range(1, maxSpeed); // apply random move speed
+            int randEnemy = Random.Range(0, 2);
+            GameObject newEnemy = Instantiate(SpawnedObject[randEnemy], new Vector3(transform.position.x, randomY), Quaternion.identity); // spawn new enemy
+            if(randEnemy == 1) // if it's the fat enemy
+            {
+                newEnemy.GetComponent<Enemy>().moveSpeed = Random.Range(1, 3); // apply random slower move speed
+            }
+            else // its a regular enemy
+            {
+                newEnemy.GetComponent<Enemy>().moveSpeed = Random.Range(1, maxSpeed); // apply random move speed
+            }
             NumberOfEnemies--;
             timer = 0;
             if (NumberOfEnemies <= 0)

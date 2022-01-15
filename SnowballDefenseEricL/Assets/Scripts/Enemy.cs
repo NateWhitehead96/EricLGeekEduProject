@@ -9,6 +9,8 @@ public class Enemy : MonoBehaviour
 
     public GameObject HitEffect; // a reference to the hit effect particle system
     public GameObject Effect;
+
+    public int health;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,10 +34,14 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Snowball"))
         {
+            health--;
             Destroy(collision.gameObject); // first destroy the snowball
-            ScoringSystem.Score += 5;
-            Effect = Instantiate(HitEffect, transform.position, Quaternion.identity);
-            StartCoroutine(DyingAnimation());
+            if (health <= 0)
+            {
+                ScoringSystem.Score += 5;
+                Effect = Instantiate(HitEffect, transform.position, Quaternion.identity);
+                StartCoroutine(DyingAnimation());
+            }
         }
     }
 

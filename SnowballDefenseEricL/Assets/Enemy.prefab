@@ -148,6 +148,7 @@ MonoBehaviour:
   moveSpeed: 2
   HitEffect: {fileID: 7826159422365659943, guid: c41d18c28ffb44c439f673d99e541a39, type: 3}
   Effect: {fileID: 0}
+  health: 1
 --- !u!95 &1438541391218193103
 Animator:
   serializedVersion: 3
