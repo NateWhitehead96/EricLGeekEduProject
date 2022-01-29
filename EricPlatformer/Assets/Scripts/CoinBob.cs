@@ -11,6 +11,12 @@ public class CoinBob : MonoBehaviour
     public float topValue; // how high up can the coin go
     public float botValue; // how low can ya go
 
+    private void Start()
+    {
+        topValue = transform.position.y + 0.5f;
+        botValue = transform.position.y - 0.5f;
+    }
+
     // Update is called once per frame
     void Update()
     {

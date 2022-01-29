@@ -33,5 +33,10 @@ public class PlayerScore : MonoBehaviour
             // we die and restart from checkpoint
             transform.position = Checkpoint.position;
         }
+
+        if (collision.gameObject.CompareTag("Head")) // jumping on the ground enemy's head
+        {
+            collision.gameObject.GetComponentInParent<GroundEnemy>().moveSpeed = 0; // simulate killing the spider
+        }
     }
 }
